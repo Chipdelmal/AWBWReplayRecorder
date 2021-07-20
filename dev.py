@@ -16,15 +16,14 @@ print('* Loading selenium scraper...')
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(DRV, options=options)
-sleep(SLP)
 # Iterate through frames ------------------------------------------------------
 for ndx in range(4):
     driver.get('{}{}'.format(URL, ndx))
+    sleep(SLP)
     # driver.execute_script("document.body.style.zoom='150%'")
     imgName = 'turn_{}.png'.format(str(ndx).zfill(3))
     imgPath = path.join(OUT, imgName)
     element = driver.find_element_by_id('gamecontainer').screenshot(imgPath)
-    sleep(SLP)
 
 # # element = driver.find_element_by_id('gamemap-container')
 # (location, size) = (element.location, element.size)
