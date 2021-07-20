@@ -9,21 +9,30 @@ from selenium.webdriver.chrome.options import Options
 URL = 'https://awbw.amarriner.com/2030.php?games_id=347352&ndx='
 DRV = './chromedriver/chromedriver'
 OUT = './img/'
-TRN = 74
 SLP = 10
+(TRN, ZOM) = (74, ZOM)
 # Load driver and mainpage ----------------------------------------------------
-print('* Loading selenium scraper...')
+print('* Loading selenium scraper...', end='\r')
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(DRV, options=options)
+driver.get('{}{}'.format(URL, 0))
+# Set zoom --------------------------------------------------------------------
+for i in range(8):
+    driver.find_element_by_id('zoom-in').click()
 # Iterate through frames ------------------------------------------------------
-for ndx in range(4):
+for ndx in range(0, TRN):
+    print('* Parsing ({}/{})'.format(ndx, TRN), end='\r')
     driver.get('{}{}'.format(URL, ndx))
+    # driver.set_window_size(1366, 728)
     sleep(SLP)
     # driver.execute_script("document.body.style.zoom='150%'")
     imgName = 'turn_{}.png'.format(str(ndx).zfill(3))
     imgPath = path.join(OUT, imgName)
     element = driver.find_element_by_id('gamecontainer').screenshot(imgPath)
+sleep(SLP)
+print('* Done ({}/{})'.format(ndx, TRN), end='\r')
+driver.close()
 
 # # element = driver.find_element_by_id('gamemap-container')
 # (location, size) = (element.location, element.size)
