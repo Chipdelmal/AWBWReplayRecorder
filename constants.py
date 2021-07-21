@@ -4,6 +4,7 @@
 DRV_PTH = './chromedriver/chromedriver'
 OUT_PTH = '/home/chipdelmal/Documents/AWBW/'
 # Constants that probably don't require change
-SLEEP = 10
+SLEEP = 12
 HEADLESS = True
-BASE_URL = 'https://awbw.amarriner.com/2030.php?games_id=344511&ndx='
+BASE_URL = 'https://awbw.amarriner.com/2030.php?games_id={}&ndx='
+MAP_ONLY = True
