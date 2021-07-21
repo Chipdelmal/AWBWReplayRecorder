@@ -11,5 +11,5 @@ OUT_SM="$PTH/$NAME/${NAME}_small.gif"
 OUT_LG="$PTH/$NAME/${NAME}.gif"
 
 # python main.py $ID $NAME $TURNS $ZOOM
-convert -delay 90 -resize 500x500 -loop 0 $IN $OUT_SM
+convert -delay 90 -resize 300x300 -loop 0 $IN $OUT_SM
 convert -delay 90 -loop 1 $IN $OUT_LG
