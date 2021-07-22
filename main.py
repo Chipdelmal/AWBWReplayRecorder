@@ -10,10 +10,15 @@ import constants as cst
 import functions as fun
 
 if fun.isnotebook():
-    (ID, NAME) = ('357091', '04_Booyah')
+    (ID, NAME, OUT_PTH) = (
+        '357091', '04_Booyah-Chip_Yami_Richie', 
+        '/home/chipdelmal/Documents/AWBW/'
+    )
     (TRN, ZOM) = (57, 8)
 else:
-    (ID, NAME, TRN, ZOM) = (argv[1], argv[2], argv[3], argv[4])
+    (ID, NAME, TRN, ZOM, OUT_PTH) = (
+        argv[1], argv[2], argv[3], argv[4], argv[5]
+    )
 ###############################################################################
 # Create folders and load driver
 ###############################################################################
@@ -58,7 +63,3 @@ for ndx in range(0, TRN+1):
 sleep(cst.SLEEP)
 print('* Done ({}/{})'.format(ndx, TRN), end='\r')
 driver.close()
-
-# convert -delay 60 -resize 500x500 -loop 0 *.png animation.gif
-# convert -delay 60 -resize 500x500 -loop 0 *.png animation.gif
-# ffmpeg -f image2 -framerate 1 -i turn_%3d.png  out.gif
