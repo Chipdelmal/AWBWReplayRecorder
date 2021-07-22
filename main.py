@@ -17,17 +17,16 @@ if fun.isnotebook():
     (TRN, ZOM) = (57, 8)
 else:
     (ID, NAME, TRN, ZOM, OUT_PTH) = (
-        argv[1], argv[2], argv[3], argv[4], argv[5]
+        argv[1], argv[2], int(argv[3]), int(argv[4]), argv[5]
     )
 ###############################################################################
 # Create folders and load driver
 ###############################################################################
 URL = cst.BASE_URL.format(ID)
-OUT_PTH = path.join(cst.OUT_PTH, NAME)
+OUT_PTH = path.join(OUT_PTH, NAME)
 if not path.exists(OUT_PTH):
     os.makedirs(OUT_PTH)
 # Load driver and mainpage ----------------------------------------------------
-print('* Loading selenium scraper...', end='\r')
 options = webdriver.ChromeOptions()
 if cst.HEADLESS:
     options.add_argument("--window-size=1920x1080")
@@ -47,7 +46,7 @@ if cst.MAP_ONLY:
 # Iterate through turns (frames)
 ###############################################################################
 for ndx in range(0, TRN+1):
-    print('* Parsing ({}/{})'.format(ndx, TRN), end='\r')
+    print('* Scraping ({}/{})'.format(ndx+1, TRN), end='\r')
     driver.get('{}{}'.format(URL, ndx))
     sleep(cst.SLEEP)
     if cst.MAP_ONLY:
