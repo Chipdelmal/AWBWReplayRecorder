@@ -10,11 +10,11 @@ import constants as cst
 import functions as fun
 
 if fun.isnotebook():
-    (ID, NAME, OUT_PTH) = (
+    (ID, NAME, OUT_PTH, TRN, ZOM) = (
         '357091', '04_Booyah-Chip_Yami_Richie', 
-        '/home/chipdelmal/Documents/AWBW/'
+        '/home/chipdelmal/Documents/AWBW/',
+        57, 8
     )
-    (TRN, ZOM) = (57, 8)
 else:
     (ID, NAME, TRN, ZOM, OUT_PTH) = (
         argv[1], argv[2], int(argv[3]), int(argv[4]), argv[5]
@@ -41,7 +41,7 @@ for i in range(ZOM):
 # Prepend identifier to filenames ---------------------------------------------
 prep = 'S'
 if cst.MAP_ONLY:
-    prep = 'M'
+    prep = ''
 ###############################################################################
 # Iterate through turns (frames)
 ###############################################################################
