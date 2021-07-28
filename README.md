@@ -22,10 +22,10 @@ First time setup and use are still a bit clunky but I'm making improvements in u
 ### Use
 
 0. Upload the replay file if needed (in case it has already been deleted from the server).
-1. Get the match ID and number of turns as detailed in my [blog post]().
+1. Get the match ID and number of turns as detailed in my [blog post](https://chipdelmal.github.io/blog/posts/awbw).
 2. Launch the [bash script](./awbw.sh) from the terminal as: 
     `./awbw.sh ID DESIRED_MATCH_NAME TURNS_NUMBER ZOOM_LEVEL EXPORT_PATH`
-    (for more info on these variables, look at the [awbw.sh](./awbw.sh) file or my [blog post]().
+    (for more info on these variables, look at the [awbw.sh](./awbw.sh) file or my [blog post](https://chipdelmal.github.io/blog/posts/awbw).
 3. Wait until the whole script has finished (might take a while).
 4. Two GIFs and an MP4 file should show up in the provided path.
 
@@ -35,7 +35,7 @@ If something's not working correctly, try modifying the `HEADLESS` variable in t
 
 ## More information
 
-I've documented the code a bit over on my [blog post](). It's not comprehensive, but it might be handy if something is nor working correctly. The explanations on why the script takes so long and avenues for possible modifications are also detailed in it.
+I've documented the code a bit over on my [blog post](https://chipdelmal.github.io/blog/posts/awbw). It's not comprehensive, but it might be handy if something is nor working correctly. The explanations on why the script takes so long and avenues for possible modifications are also detailed in it.
 
 ## Dependencies
 
