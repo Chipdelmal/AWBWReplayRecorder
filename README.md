@@ -5,7 +5,7 @@
 These scripts were created to save replays from the awesome website [Advance Wars by Web](https://awbw.amarriner.com/) to gif or movie files. The code works by taking snapshots of the replays at each turn (through [Selenium](https://selenium-python.readthedocs.io/)) and compiling the snapshots into gif files through [ImageMagick](https://imagemagick.org/index.php).
 
 
-![AWBW Logo](./media/M_turn_038.jpg)
+![map](./media/M_turn_028.png)
 
 ## Instructions
 
@@ -37,13 +37,14 @@ If something's not working correctly, try modifying the `HEADLESS` variable in t
 
 I've documented the code a bit over on my [blog post](). It's not comprehensive, but it might be handy if something is nor working correctly. The explanations on why the script takes so long and avenues for possible modifications are also detailed in it.
 
-![map](./media/M_turn_028.png)
 ## Dependencies
 
 * [Selenium](https://selenium-python.readthedocs.io/)
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 * [ImageMagick](https://imagemagick.org/index.php)
 
+
+![AWBW Logo](./media/M_turn_038.jpg)
 
 # Author
 
