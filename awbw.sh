@@ -17,7 +17,7 @@ TURNS=$3
 ZOOM=$4
 PTH=$5
 RES='300'
-DELAY='120'
+DELAY='180'
 # Create paths and names for the frames and gifs -----------------------------
 IN="$PTH/$NAME/*.png"
 OUT_SM="$PTH/$NAME/${NAME}_small"

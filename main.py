@@ -53,7 +53,7 @@ for ndx in range(0, TRN+1):
         element = driver.find_element_by_id('gamemap-container')
     else:
         element = driver.find_element_by_id('gamecontainer')
-    imgName = '{}_turn_{}.png'.format(prep, str(ndx).zfill(3))
+    imgName = '{}turn_{}.png'.format(prep, str(ndx).zfill(3))
     imgPath = path.join(OUT_PTH, imgName)
     element.screenshot(imgPath)
 ###############################################################################
