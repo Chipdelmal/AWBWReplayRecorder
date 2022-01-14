@@ -5,7 +5,7 @@
 These scripts were created to save replays from the awesome website [Advance Wars by Web](https://awbw.amarriner.com/) to gif or movie files. The code works by taking snapshots of the replays at each turn (through [Selenium](https://selenium-python.readthedocs.io/)) and compiling the snapshots into gif files through [ImageMagick](https://imagemagick.org/index.php).
 
 
-![map](./media/M_turn_028.jpg)
+![map](./media/06_Water-Chip_Tomas.gif)
 
 ## Instructions
 
