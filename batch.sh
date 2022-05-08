@@ -37,4 +37,27 @@ OUT='/home/chipdelmal/Documents/AWBW/'
 # ./awbw.sh "488362" "34_JFK-Chip_Danton_Chris_Richie" "76" "20" $OUT
 # ./awbw.sh "465486" "35_Standoff-Chip_Tomas_Danton_Yami_Richie_Memo" "181" "6" $OUT
 # ./awbw.sh "470866" "36_Emprendimiento-Chip_Yami_Richie_Memo_Danton_Christian" "125" "12" $OUT
-./awbw.sh "532999" "37_AdminWarsByWeb-Yami_Richie" "36" "12" $OUT
+# ./awbw.sh "532999" "37_AdminWarsByWeb-Yami_Richie" "36" "12" $OUT
+# ./awbw.sh "520287" "38_Admin-Chip_Richie_Danton_Christian" "115" "12" $OUT
+# ./awbw.sh "541312" "39_GLSTD-Chip_Racecar" "25" "15" $OUT
+# ./awbw.sh "490403" "40_Desalmados-Chip_Danton_Chris_Yami_Richie_Memo" "166" "11" $OUT
+# ./awbw.sh "548820" "41_GLSTD-Chip_DiscoDave" "37" "13" $OUT
+# ./awbw.sh "547943" "42_TrainingDrill-Chip_Chris" "43" "13" $OUT
+# ./awbw.sh "551605" "43_PrayMasheroAway-Chip_Chris" "31" "14" $OUT
+# ./awbw.sh "553483" "44_Coviz-Chip_Chris" "42" "14" $OUT
+# ./awbw.sh "553072" "45_MuerteMashera-Chip_Chris_Yami_Danton" "79" "10" $OUT
+# ./awbw.sh "554391" "46_GLSTD-Chip_lkrom53" "21" "13" $OUT
+# ./awbw.sh "556336" "47_NintendoDirect-Chip_Chris" "62" "14" $OUT
+# ./awbw.sh "564347" "48_Kyoto-Chip_Danton" "25" "17" $OUT
+# ./awbw.sh "560064" "49_ProfanarConSuPlantaTuSuelo-Chris_Danton" "44" "17" $OUT
+# ./awbw.sh "564348" "50_Oslo-Chip_Danton" "41" "17" $OUT
+# ./awbw.sh "564405" "51_Kyoto-Chip_Chris" "49" "10" $OUT
+# ./awbw.sh "530007" "52_MerryGoRound-Chip_Chris_Tomas_Danton_Richie" "192" "5" $OUT
+# ./awbw.sh "543548" "53_Internationa-Chip_Yami_Tomas_Chris_Richie_Danton_Cairb_Leo" "146" "5" $OUT
+# ./awbw.sh "570266" "54_Matcha-Chip_Chris" "34" "16" $OUT
+# ./awbw.sh "560497" "55_Covfefe-Chip_Yami_Richie_Chris_Danton" "86" "8" $OUT
+# ./awbw.sh "570268" "56_Triunvirato-Chip_Danton" "45" "12" $OUT
+# ./awbw.sh "546673" "57_GottaGoFast-Chip_Leo_Tomas_Danton_Chris_Cairb" "194" "5" $OUT
+# ./awbw.sh "588223" "58_GLSTD-Chip_Zero1" "27" "10" $OUT
+# ./awbw.sh "572138" "59_Salchichas-Leo_Cairb" "59" "10" $OUT
+./awbw.sh "547971" "60_FloresDeMozart-Chip_Yami_Danton_Chris_Leo_Richie" "167" "4" $OUT

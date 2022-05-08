@@ -27,7 +27,7 @@ OUT_MD="$PTH/$NAME/${NAME}_medium"
 echo "${OUT_LG}.gif"
 # Scrape battle frames -------------------------------------------------------
 python main.py $ID $NAME $TURNS $ZOOM $PTH
-# # Convert frames to gifs and mp4 ---------------------------------------------
+# Convert frames to gifs and mp4 ---------------------------------------------
 convert -delay $DELAY -resize "${RES}x${RES}" -loop 0 $IN "${OUT_SM}.gif"
 convert -delay $DELAY -loop 1 $IN "${OUT_LG}.gif"
 convert -delay $DELAY -loop 1 $IN "${OUT_LG}.mp4"
